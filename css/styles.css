@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapid.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.nav-item :hover{
+  transform: scale(1.2) !important;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Montserrat";
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat-Bold";
+}
+h1{
+    font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h6{
+  font-size: 3rem;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+
+/* Headings */
+
+#title{
+  background-color: #009DAE;
+  color: #ffffff;
+  height: 740px;
+}
+
+.sec-1{
+  padding: 85px 0px 100px;
+}
+
+.container-fluid{
+padding: 3% 15% 7%;
+}
+
+
+/* Navigation Bar */
+
+#navbar-layer{
+  padding: 10px 0px 4.5rem;
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";;
+  font-size:1.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Download Buttons */
+
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+
+.title-image {
+  padding-bottom: 50px;
+  padding-left : 250px;
+  padding-right: 800px;
+  padding-top : 0px;
+
+  margin: 10px;
+  transform: rotate(25deg);
+  position: relative;
+
+}
+
+/* Features */
+.row{
+  display: grid;
+  grid-template-columns: repeat(2,0.7fr);
+  grid-template-rows: repeat(2,0.6fr);
+}
+#features{
+  font-family: "Ubuntu";
+  padding: 7% 3% 7%;
+  background-color: #FFF;
+  color: #ffa500;
+  position: relative;
+  font-size: 20px;
+  line-height: 1.8;
+
+}
+
+.twoone img{
+  width: 600px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.twotwo p{
+  padding-top: 50px;
+}
+
+.oneone{
+  padding-left: 10px;
+}
+.onetwo img{
+  padding-left: 10px
+}
+
+
+/* CARDS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-title{
+  background: linear-gradient(90deg, #48a9fe, #0beef9);
+  text-align: center;
+  color: #fff;
+  padding:90px 20px 0px;
+  font-size: 2rem;
+}
+
+#algos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #48a9fe, #0beef9);
+  background-attachment: fixed;
+  margin-top: -140px;
+}
+
+/* Linear grading shades
+1. 3eadcf  abe9cd
+2. 7ee8fa  eec0c6
+3. 087ee1  05e8ba
+4. 48c3eb  718edd
+5. 48a9fe  0beef9
+*/
+
+
+
+
+
+.container {
+  position: relative;
+  width: 25000px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+.container .card {
+  position: relative;
+  width: 255px;
+  height: 420px;
+  background: #fff;
+  margin: 0px 10px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.container:hover .card {
+  filter: blur(s0px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.container .card:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+.container .card .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+.container .card .circle h2 {
+  color: #fff;
+  font-size: 4.5em;
+  padding: 30px 0;
+}
+.container .card .content {
+  position: absolute;
+  bottom: 10px;
+  page-break-after: 20px;
+  text-align: center;
+}
+.container .card .content p {
+  color: #666;
+}
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.container .card:nth-child(1) .circle, .container .card:nth-child(1) .content a {
+  background: linear-gradient(90deg, #d44519f1, #f52575);
+}
+.container .card:nth-child(2) .circle, .container .card:nth-child(2) .content a {
+  background: linear-gradient(90deg, #f52575, #ff5202);
+}
+.container .card:nth-child(3) .circle, .container .card:nth-child(3) .content a {
+  background: linear-gradient(90deg, #ff5202, #e2bb0a);
+}
+.container .card:nth-child(4) .circle, .container .card:nth-child(4) .content a {
+  background: linear-gradient(90deg, #e2bb0a, #e5e91e);
+}
+
+.content{
+  font-size: 20px;
+}
+
+
+
+/* Footer */
+#footer{
+
+  padding-bottom: 5px;
+  margin: 4px;
+  margin-bottom: -8px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-color: #072227;
+  color: #fff;
+  /* width: 150%; */
+}
+
+#footer p{
+  padding-top: 19px;
+  margin-top: -5px;
+}
+.social-icon{
+  text-align: center;
+  margin: 20px 10px;
+}
+
+
+@media(max-width: 1200px) {
+
+  #title{
+    text-align: center;
+  }
+
+  .title-image{
+
+    position: static;
+    transform: rotate(0);
+    margin-left: 20px;
+  }
+}

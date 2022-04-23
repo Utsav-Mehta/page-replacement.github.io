@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Operating System Lab</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script defer src="index.js"></script>
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav id="navbar-layer" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Operating System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nav-algo">Algorithms</a>
+            </li>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" style="font-family: 'Montserrat-Light';z-index: 1;">Simulation</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="FIFO-Sim.html">FIFO</a>
+                <a href="LIFO-Sim.html">LIFO</a>
+                <a href="LRU-Sim.html">LRU</a>
+                <a href="OPR-Sim.html">OPR</a>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row sec-1">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Page Replacement Algorithms</h1>
+          <!-- <button type="button" class="btn btn-outline-dark btn-lg download-button"> More Info </button>-->
+
+        </div>
+        <div class="<col-lg-></col-lg->6">
+          <img class="title-image" src="images/logo.png" alt="iphone-mockup">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  <div class="grid">
+    <section id="features">
+      <div class="row">
+        <div class="oneone">
+          <p>In a computer operating system that uses paging for virtual memory management, page replacement algorithms decide which memory pages to page out,
+            sometimes called swap out, or write to disk, when a page of memory needs to be allocated. Page replacement happens when a requested page is not in memory (page fault) and a free page cannot be used to satisfy the allocation, either
+            because there are none, or because the number of free pages is lower than some threshold. </p>
+        </div>
+        <div class="onetwo">
+          <img src="f1.jpg" alt="page-replacement-algorithm">
+        </div>
+        <div class="twoone">
+          <img src="f2.png" alt="">
+        </div>
+
+        <div class="twotwo">
+          <p>When the page that was selected for replacement and paged out is referenced again it has to be paged in (read in from disk), and this involves waiting for I/O completion. This determines the quality of the page replacement algorithm: the
+            less time waiting for page-ins, the better the algorithm. A page replacement algorithm looks at the limited information about accesses to the pages provided by hardware, and tries to guess which pages should be replaced to minimize the
+            total number of page misses, while balancing this with the costs (primary storage and processor time) of the algorithm itself.</p>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
+  <div id="nav-algo" class="text-title">
+    <h6 style="color: white;font-size:3.5rem;font-weight: bold;">Various Page Replacement Algorithms</h6>
+  </div>
+
+  <!-- CARDS -->
+  <section id="algos">
+
+
+
+    <div id="glow" class="container">
+      <div class="card">
+        <div class="circle">
+          <h2>01</h2>
+        </div>
+        <div class="content">
+          <p>FIFO</p>
+          <p>First In First Out Page Replacement Algorithm</p>
+          <a href="./FIFO.html"> READ MORE</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <h2>02</h2>
+        </div>
+        <div class="content">
+          <p>OPR</p>
+          <p>Optimal Page Replacement Algorithm</p>
+          <a href="./OPR.html"> READ MORE</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <h2>03</h2>
+        </div>
+        <div class="content">
+          <p>LIFO</p>
+          <p>Last In First Out Page Replacement Algorithm</p>
+          <a href="./LIFO.html"> READ MORE</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <h2>04</h2>
+        </div>
+        <div class="content">
+          <p>LRU</p>
+          <p>Least Recently Used Page Replacement Algorithm</p>
+          <a href="./LRU.html"> READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+
+
+    <footer style="text-align: center;">
+
+      <!-- <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i> -->
+
+      <p style="color: #ffffff;">© OS G4 Team3</p>
+
+    </footer>
+
+  </section>
+</body>
+
+</html>
